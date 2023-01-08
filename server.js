@@ -1,8 +1,7 @@
 const app = require("./app");
 const PORT = 5000;
 const dbConnect = require("./config/dbconnection");
-// Database Connectin
-
+// Database Connecting
 dbConnect();
 
 app.listen(PORT, () => {

@@ -16,6 +16,7 @@ exports.getAllFormData = async (req, res, next) => {
 exports.crateFormData = async (req, res, next) => {
   try {
     const form = await Form.create(req.body);
+    console.log(form);
     res.status(200).json({
       message: "Form data added success fully",
       success: true,
